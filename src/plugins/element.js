@@ -22,7 +22,8 @@ import {
   TableColumn,
   Switch,
   Tooltip,
-  Pagination
+  Pagination,
+  Dialog
 } from 'element-ui'
 
 const elConponents = [
@@ -47,7 +48,8 @@ const elConponents = [
   TableColumn,
   Switch,
   Tooltip,
-  Pagination
+  Pagination,
+  Dialog
 ]
 
 elConponents.forEach(el => {
