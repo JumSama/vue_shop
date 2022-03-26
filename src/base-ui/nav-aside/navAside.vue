@@ -1,7 +1,7 @@
 <template>
   <div class="nav-aside">
     <el-menu
-      default-active="1-4-1"
+      :default-active="$route.path"
       class="el-menu-vertical-demo"
       @open="handleOpen"
       @close="handleClose"
@@ -10,17 +10,22 @@
       text-color="#fff"
       unique-opened
       :collapse-transition="false"
+      router
     >
       <div class="triger-collapse" @click="changeCollapse">|||</div>
       <!-- 一级菜单 -->
-      <el-submenu :index="item.id + ''" v-for="item in menuList" :key="item.id">
+      <el-submenu
+        :index="'/' + item.path"
+        v-for="item in menuList"
+        :key="item.id"
+      >
         <template slot="title">
           <i :class="iconList[item.id]"></i>
           <span slot="title" class="title">{{ item.authName }}</span>
         </template>
         <!-- 二级菜单 -->
         <el-menu-item
-          :index="subItem.id + ''"
+          :index="'/' + subItem.path"
           v-for="subItem in item.children"
           :key="subItem.id"
         >

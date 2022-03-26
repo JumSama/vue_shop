@@ -12,7 +12,17 @@ import {
   Menu,
   MenuItem,
   MenuItemGroup,
-  Submenu
+  Submenu,
+  Breadcrumb,
+  BreadcrumbItem,
+  Card,
+  Row,
+  Col,
+  Table,
+  TableColumn,
+  Switch,
+  Tooltip,
+  Pagination
 } from 'element-ui'
 
 const elConponents = [
@@ -20,7 +30,6 @@ const elConponents = [
   Form,
   FormItem,
   Input,
-  Message,
   Container,
   Aside,
   Main,
@@ -28,7 +37,17 @@ const elConponents = [
   Menu,
   MenuItem,
   Submenu,
-  MenuItemGroup
+  MenuItemGroup,
+  Breadcrumb,
+  BreadcrumbItem,
+  Card,
+  Row,
+  Col,
+  Table,
+  TableColumn,
+  Switch,
+  Tooltip,
+  Pagination
 ]
 
 elConponents.forEach(el => {
